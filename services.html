@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en-US"> <!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="UTF-8" />
+<title>TRLPLAW</title>
+<meta name="description" content="Silvio law-firm HTML theme">
+<meta name="author" content="Bebel"><meta name="keywords" content="law-firm, design, corporate, minimal, clean, white, simple">
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+
+<!-- Mobile Specific Metas
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================== -->
+
+<link rel="shortcut icon" href="images/apple-touch-icon.png">
+
+<link rel='stylesheet' id='base-css'  href='stylesheets/base.css' type='text/css' media='all' />
+<link rel='stylesheet' id='skeleton-css'  href='stylesheets/skeleton.css' type='text/css' media='all' />
+<link rel='stylesheet' id='layout-css'  href='stylesheets/layout.css' type='text/css' media='all' />
+<link rel='stylesheet' id='supersized-css'  href='stylesheets/supersized.css' type='text/css' media='all' />
+<link rel='stylesheet' id='supersized.shutter-css'  href='stylesheets/supersized.shutter.css' type='text/css' media='all' />
+<link rel='stylesheet' id='flexslider-css'  href='stylesheets/flexslider.css' type='text/css' media='all' />
+<link rel='stylesheet' id='silvio-style-css'  href='style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='rufina-css'  href='http://fonts.googleapis.com/css?family=Rufina:400,700' type='text/css' media='all' />
+<link rel='stylesheet' id='noto-serif-css'  href='http://fonts.googleapis.com/css?family=Noto+Serif:400,400italic' type='text/css' media='all' />
+<link rel='stylesheet' id='roboto-css'  href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' type='text/css' media='all' />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+<script type='text/javascript' src='js/desaturate.js'></script>
+<script type='text/javascript' src='js/jquery.easing.min.js'></script>
+<script type='text/javascript' src='js/supersized.3.2.7.min.js'></script>
+<script type='text/javascript' src='js/supersized.shutter.min.js'></script>
+<script type='text/javascript' src='js/isotope.js'></script>
+<script type='text/javascript' src='js/jquery.nicescroll.min.js'></script>
+<script type='text/javascript' src='js/jquery.flexslider-min.js'></script>
+<script type='text/javascript' src='js/jCarousel.js'></script>
+<script type='text/javascript' src='js/script.js'></script>
+
+<script type="text/javascript">
+	jQuery(document).ready(function($){
+		$('#portfolio-wrapper').isotope({
+			itemSelector : '.portfolio-item',
+			layoutMode : 'fitRows'
+		});
+			
+		$('#filters a.selected').trigger("click");
+		
+		$('#filters a').click(function(e){
+			e.preventDefault();
+
+			var selector = $(this).attr('data-option-value');
+			$('#portfolio-wrapper').isotope({ filter: selector });
+
+			$(this).parents('ul').find('a').removeClass('selected');
+			$(this).addClass('selected');
+		});
+	});
+
+	jQuery(function($){ 
+		$.supersized({ 
+			slide_interval : 6000, 
+			transition : 1, 
+			transition_speed : 700, 
+			slide_links : 'blank', 
+			slides : 
+				[
+					{ image : 'images/home1.jpg', title : '&quot;Law is a thing of form. It&#039;s not fixed, it&#039;s open to interpretation.&quot; <span class="author">Marc Johnons, Lawyer at Silvio</span>' },
+					{ image : 'images/home2.jpg', title : '&quot;Law is something to form. It&#039;s not fixed but open to interpretation.&quot; <span class="author">Marky Wahlbennie</span>' } 
+				] 
+		});
+	});
+</script>
+
+<style>
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"] { background: #000; }
+.button:hover, button:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover { background: #0d4470; }
+.fdiv p { color: #666666; }
+#progress-bar { background: #394a75 !important; }
+
+</style>
+
+</head>
+
+<body class="page page-template group-blog">
+
+<div class="home-container page hctp clearfix">
+	
+	<a class="slink" href="index.html" title="Sivio" rel="home"><img class="slogo" src="images/logo.png" /></a>
+	<img class="mobile_menu" src="images/mobile_menu.png"/>
+		
+	<div class="menu-main-menu-container">
+		<ul id="menu-main-menu" class="menu">
+			<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
+			<li class="menu-item"><a href="services.html">Services</a>
+			<li class="menu-item"><a href="attorney-profiles.html">Attorney Profiles</a></li>
+			<li class="menu-item"><a href="blog.html">Blog</a></li>
+			<li class="menu-item"><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</div>
+	<h1 class="header page-title">Services</h1>			
+	
+</div>
+
+<div class="page-content tpc clearfix">
+	
+	<div id="filters">
+		<ul class="clearfix">
+			<li><a href="#filter" data-option-value="*" class="active selected">All</a><span>&nbsp;/&nbsp;</span></li>
+			<li><a href="#filter" data-option-value=".term-corporate">Filter 1</a><span>&nbsp;/&nbsp;</span></li>
+			<li><a href="#filter" data-option-value=".term-fashion-industry">Filter 2</a><span>&nbsp;/&nbsp;</span></li>
+			<li><a href="#filter" data-option-value=".term-industry">Filter 3</a><span>&nbsp;/&nbsp;</span></li>
+			<li><a href="#filter" data-option-value=".term-medical">Filter 4</a><span>&nbsp;/&nbsp;</span></li>
+		</ul>	
+	</div>
+
+	<div class="team portfolio">
+		<ul id="portfolio-wrapper" class="items imglist clearfix">
+			<li class="portfolio term-fashion-industry term-industry portfolio-item">
+				<img class="team-member" src="images/wordpresslawportfolioitem5-234x182.jpg" alt=""/>
+				<h3>Infrastructure & PPP</h3>
+				<p>The Infrastructure and PPP sector in Nigeria is an emerging trend, which...</p>
+				<span><a href="#">more&hellip;</a></span>
+			</li>
+			
+			<li class="portfolio term-corporate term-medical portfolio-item">
+				<img class="team-member" src="images/wordpresslawportfolioitem3-234x182.jpg" alt=""/>
+				<h3>Corporate Law</h3>
+				<p>TRLPLAW is recognized as an undisputed Global Corporate Practice.</p>
+				<span><a href="#">more&hellip;</a></span>
+			</li>
+
+			<li class="portfolio term-corporate term-fashion-industry term-medical portfolio-item">
+				<img class="team-member" src="images/wordpresslawportfolioitem1-234x182.jpg" alt=""/>
+				<h3>Finance Law</h3>
+				<p>Our integrated team of specialists provide sound and innovative service.</p>
+				<span><a href="#">more&hellip;</a></span>
+			</li>
+
+			<li class="portfolio term-fashion-industry term-industry portfolio-item">
+				<img class="team-member" src="images/wordpresslawportfolioitem4-234x182.jpg" alt=""/>
+				<h3>Litigation</h3>
+				<p>TRLPLAW prides itself as one of the top-notch firms in Nigeria, UK and US.</p>
+				<span><a href="#">more&hellip;</a></span>
+			</li>	
+
+			<li class="portfolio term-industry portfolio-item">
+				<img class="team-member" src="images/wordpresslawportfolioitem6-234x182.jpg" alt=""/>
+				<h3>Oil & Gas</h3>
+				<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+				<span><a href="#">more&hellip;</a></span>
+			</li>
+	
+			<li class="portfolio term-corporate term-industry term-medical portfolio-item">
+				<img class="team-member" src="images/estate.jpg" alt=""/>
+				<h3>Real Estates</h3>
+				<p>TRLPLAW Nigeria has two core practice groups: a dispute resolution.</p>
+				<span><a href="#">more&hellip;</a></span>
+			</li>
+		</ul>				
+			
+		<ul class="team-direction-nav">
+			<li><a href="#" >Older Entries</a></li>
+			<li></li>
+		</ul>
+	</div> 
+</div>
+
+<div class="fdiv mw">
+	<p class="fll">TRLPLAW - All Rights Reserved</p>
+	<p class="flr tta">top</p>
+</div>
+
+</body>
+</html>
